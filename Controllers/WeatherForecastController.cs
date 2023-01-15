@@ -38,6 +38,7 @@ namespace Versioning.Controllers
         [MapToApiVersion("1.0")]
         public IEnumerable<WeatherForecast> Get()
         {
+            _logger.LogInformation($"From Action Method of {nameof(WeatherForecastController)}");
             return WeatherForecasts;
         }
 

@@ -48,7 +48,6 @@ namespace Versioning
 
             app.UseAuthorization();
 
-
             app.MapControllers().WithApiVersionSet(apiVersionSet);
 
             app.Run();
